@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentiment Analysis App</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sentiment Analysis (English only)</h1>
+
+  <form id="addTextForm">
+    <input type="text" id="newText" placeholder="Enter an English sentence..." required />
+    <button type="submit">Add &amp; Analyze</button>
+  </form>
+
+  <div style="margin: 12px 0;">
+    <button type="button" class="btn-export" onclick="saveAsMarkdown()">Zapisz jako MD</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Text</th>
+        <th>Sentiment</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+    <tbody id="textsTable"></tbody>
+  </table>
+
+  <footer style="margin-top: 40px; text-align: center; color: #888; font-size: 0.9rem;">
+    Made by <strong>skrzyluk</strong>
+  </footer>
+</body>
+</html>
